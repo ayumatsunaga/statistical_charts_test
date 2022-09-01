@@ -14,7 +14,7 @@ import glob
 iDir = iDir = os.getcwd()#このプログラムと同じディレクトリ
 filename = glob.glob('ダッシュボードデータ.xlsx')
 Filename = "".join(filename)#上のままではリストなので文字列に直す
-FILE = iDir+ "\\" + Filename#'C:\\Users\\pccnf\\Desktop\\making_dashboard\\ダッシュボードデータ.xlsx'
+FILE = iDir+ "/" + Filename#'C:\\Users\\pccnf\\Desktop\\making_dashboard\\ダッシュボードデータ.xlsx'
 
 st.set_page_config(layout="wide")#layout=”wide”としないとグラフが中心よって両サイドに不必要な空白が生まれる
 
