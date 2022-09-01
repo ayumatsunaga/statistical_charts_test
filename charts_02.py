@@ -99,4 +99,11 @@ st.header('経産省　特定サービス産業動態統計')
 
 left_column, right_column = st.columns(2)
 left_column.subheader('情報サービス産業の売上高の推移（4~9月）')
-df = pd.read_excel(FILE,sheet_name='特サビ統計',index_col='年')
+#df = pd.read_excel(FILE,sheet_name='特サビ統計',index_col='年')
+
+df = pd.DataFrame({
+    'ｿﾌﾄｳｴｱ開発・ﾌﾟﾛｸﾞﾗﾑ作成' :[4.91943497230385,4.93144564537357,5.090704,2.574693],
+    'ｼｽﾃﾑ等管理運営受託' : [0.929766874649597,0.921282941840423,0.970283,0.505917],
+    'その他' : [1.06469219368697,1.01380967738878,1.107981,0.28725]
+    })
+left_column.bar_chart(df, width=900, height=500, use_container_width=False)
