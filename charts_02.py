@@ -18,7 +18,7 @@ FILE = iDir+ "/" + Filename#'C:\\Users\\pccnf\\Desktop\\making_dashboard\\ダッ
 
 st.set_page_config(layout="wide")#layout=”wide”としないとグラフが中心よって両サイドに不必要な空白が生まれる
 
-st.title('産業政策部　政府統計ダッシュボード（仮）')
+st.title('産業政策部　政府統計ダッシュボード（作成中）')
 st.header('経産省　鉱工業指数')
 
 left_column, right_column = st.columns(2)
