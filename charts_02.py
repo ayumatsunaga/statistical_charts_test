@@ -111,25 +111,25 @@ left_column.bar_chart(df, width=900, height=500, use_container_width=False)
 #写真の掲載
 from PIL import Image
 col1 = st.columns(1)
-st.header('画像・写真の掲載')
+#st.header('画像・写真の掲載')
 img = Image.open('jimboP2.jpg')
 img2 = Image.open('asano.png')
 img3 = Image.open('kaijo009_R.jpg')
 
 left_column, center_colomn, right_column = st.columns(3)
-left_column.image(img, caption='神保委員長',width=250, output_format='auto')
-center_colomn.image(img2, caption='浅野議員',width=250, output_format='auto')
-right_column.image(img3, caption='会場の様子',width=250, output_format='auto')
+#left_column.image(img, caption='神保委員長',width=250, output_format='auto')
+#center_colomn.image(img2, caption='浅野議員',width=250, output_format='auto')
+#right_column.image(img3, caption='会場の様子',width=250, output_format='auto')
 
 #ファイルのダウンロード
 col1 = st.columns(1)
-st.header('ファイルのダウンロード')
+#st.header('ファイルのダウンロード')
 
 left_column, right_column = st.columns(2)
-download_file = iDir+ "\\ik-110h2022e001.csv"
-left_column.download_button(
-     label="テストファイルのダウンロードはこちらから",
-     data='test',
-     file_name='download_test.csv',
-     mime='text/csv',
- )
+#download_file = iDir+ "\\ik-110h2022e001.csv"
+#left_column.download_button(
+     #label="テストファイルのダウンロードはこちらから",
+     #data='test',
+     #file_name='download_test.csv',
+     #mime='text/csv',
+ #)
